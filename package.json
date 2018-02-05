@@ -1,0 +1,37 @@
+{
+    "name": "cordova-plugin-enable-multidex",
+    "version": "0.1.0",
+    "description": "Enable multidex for Cordova Android apps with over 64K methods",
+    "scripts": {
+        "precommit": "lint-staged"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/adriano-di-giovanni/cordova-plugin-enable-multidex.git"
+    },
+    "keywords": ["ecosystem:cordova", "cordova-android", "multidex"],
+    "author": "Adriano Di Giovanni <me@adrianodigiovanni.com> (http://adrianodigiovanni.com/)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/adriano-di-giovanni/cordova-plugin-enable-multidex/issues"
+    },
+    "lint-staged": {
+        "*.js": ["eslint --fix", "git add"],
+        "*.json": ["prettier --write", "git add"]
+    },
+    "homepage": "https://github.com/adriano-di-giovanni/cordova-plugin-enable-multidex#readme",
+    "devDependencies": {
+        "eslint": "^4.17.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-config-standard": "^11.0.0-beta.0",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-node": "^5.2.1",
+        "eslint-plugin-prettier": "^2.6.0",
+        "eslint-plugin-promise": "^3.6.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "husky": "^0.14.3",
+        "jest": "^22.1.4",
+        "lint-staged": "^6.1.0",
+        "prettier": "^1.10.2"
+    }
+}

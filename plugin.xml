@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-enable-multidex"
+    version="0.1.0">
+
+    <name>Enable Multidex</name>
+    <description>Enable multidex for Cordova apps with over 64K methods</description>
+    <author>Adriano Di Giovanni</author>
+    <license>MIT</license>
+
+    <platform name="android">
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+        <hook type="after_platform_add" src="scripts/android/editManifest.js" />
+        <hook type="before_compile" src="scripts/android/editManifest.js" />
+    </platform>
+</plugin>
