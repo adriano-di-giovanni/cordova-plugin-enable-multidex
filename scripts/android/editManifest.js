@@ -27,7 +27,7 @@ module.exports = function(context) {
     if (filepath != null) {
         doc = xml.parseElementtreeSync(filepath)
         doc.getroot().find('./application').attrib['android:name'] =
-            'android.support.multidex.MultiDexApplication'
+            'androidx.multidex.MultiDexApplication'
         fs.writeFileSync(filepath, doc.write({ indent: 4 }))
         deferred.resolve()
     } else {
