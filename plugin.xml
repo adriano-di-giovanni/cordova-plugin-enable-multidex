@@ -2,7 +2,7 @@
 <plugin
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-enable-multidex"
-    version="0.1.3">
+    version="0.2.0">
 
     <name>Enable Multidex</name>
     <description>Enable multidex for Cordova apps with over 64K methods</description>
