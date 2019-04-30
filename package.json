@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-enable-multidex",
-    "version": "0.1.3",
+    "version": "0.2.0",
     "description": "Enable multidex for Cordova Android apps with over 64K methods",
     "scripts": {
         "precommit": "lint-staged"
