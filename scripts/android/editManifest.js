@@ -1,8 +1,8 @@
 module.exports = function(context) {
-    var fs = context.requireCordovaModule('fs')
-    var path = context.requireCordovaModule('path')
-    var Q = context.requireCordovaModule('q')
-    var xml = context.requireCordovaModule('cordova-common').xmlHelpers
+    var fs = require('fs')
+    var path = require('path')
+    var Q = require('q')
+    var xml = require('cordova-common').xmlHelpers
 
     var deferred = Q.defer()
 
@@ -27,7 +27,7 @@ module.exports = function(context) {
     if (filepath != null) {
         doc = xml.parseElementtreeSync(filepath)
         doc.getroot().find('./application').attrib['android:name'] =
-            'android.support.multidex.MultiDexApplication'
+            'androidx.multidex.MultiDexApplication'
         fs.writeFileSync(filepath, doc.write({ indent: 4 }))
         deferred.resolve()
     } else {
